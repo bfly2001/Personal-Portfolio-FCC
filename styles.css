@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+
+h1 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+#navbar {
+  display: grid;
+  height: 15vh;
+  list-style: none;
+  justify-items: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  background-color: pink;
+  width: 100vw;
+}
+
+#welcome-section {
+  display: grid;
+  background-color: lightgrey;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+}
+
+#projects {
+  background-color: lightgrey;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: lightgrey;
+  justify-content: center;
+  width: 100vw;
+  text-align: center;
+  padding: 3%;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  display: grid;
+  background-color: lightblue;
+  font-family: 'Advent Pro', sans-serif;
+  margin-bottom: 50px;
+}
+
+header {
+  background-color: pink;
+}
+
+footer {
+  display: grid;
+  background-color: pink;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  margin-top: 10%;
+  text-align: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 767px) {
+  #navbar { 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+  }
+  
+  #contact {
+    text-align: center;
+  }
+  
+  #projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-row: 1fr 1fr;
+    justify-items: center;
+  }
+  
+  h3 {
+    grid-column: 1 / 5;
+  }
+  
+  
+  
+  
+}
