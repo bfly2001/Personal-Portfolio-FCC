@@ -38,9 +38,12 @@ h3 {
   width: 100vw;
   height: auto;
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  background-color: lightgrey;
 }
 
 #contact {
