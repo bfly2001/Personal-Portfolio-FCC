@@ -43,7 +43,10 @@ h3 {
 }
 
 .project-title {
-  background-color: lightgrey;
+  background-color: pink;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 5px;
 }
 
 #contact {
