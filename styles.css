@@ -10,7 +10,7 @@ h3 {
 
 #navbar {
   display: grid;
-  height: 15vh;
+  height: 20vh;
   list-style: none;
   justify-items: center;
   align-items: center;
@@ -23,8 +23,9 @@ h3 {
 }
 
 #welcome-section {
-  display: grid;
-  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  background-color: darkgrey;
   justify-content: center;
   width: 100vw;
   height: 100vh;
@@ -33,7 +34,7 @@ h3 {
 }
 
 #projects {
-  background-color: lightgrey;
+  background-color: darkgrey;
   justify-content: center;
   width: 100vw;
   height: auto;
@@ -42,18 +43,28 @@ h3 {
   flex-direction: column;
 }
 
+.project-tile {
+  margin-bottom: 10%;
+}
+
 .project-title {
   background-color: pink;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 5px;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img {
+  border: solid 5px pink;
 }
 
 #contact {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  background-color: darkgrey;
   justify-content: center;
   width: 100vw;
   height: 100vh;
@@ -63,6 +74,20 @@ h3 {
   margin-left: auto;
   list-style: none;
   text-decoration: none;
+}
+
+li {
+  font-size: xxx-large;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+hr {
+  border: white solid 3px;
+  width: 100vw;
 }
 
 body {
@@ -80,47 +105,11 @@ header {
 footer {
   display: grid;
   background-color: pink;
-  height: 10vh;
+  height: 5vh;
   position: fixed;
   bottom: 0;
   width: 100vw;
   margin-top: 10%;
   text-align: center;
   align-items: center;
-}
-
-@media only screen and (width: 992px) {
-  #navbar {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    font-size: 50px;
-  }
-
-  #contact {
-    text-align: center;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-  }
-
-  #projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-  }
-
-  h3 {
-    grid-column-start: 1;
-    grid-column-end: 6;
-  }
-
-  #contact-heading {
-    grid-column-start: 1;
-    grid-column-end: 6;
-  }
-
 }
