@@ -10,17 +10,16 @@ h3 {
 }
 
 #navbar {
-  display: grid;
+  display: flex;
   height: 20vh;
   list-style: none;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
   overflow: hidden;
   background-color: pink;
   width: 100vw;
-  text-decoration: none;
 }
 
 #welcome-section {
